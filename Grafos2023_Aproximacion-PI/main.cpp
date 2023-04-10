@@ -148,7 +148,10 @@ cout<<endl;
 cout << setprecision(9) << fixed;
 formula= 4*(dardos_dentro/total_dardos);
 cout<<endl;
+dardos_fuera=total_dardos-dardos_dentro;
   cout << formula<< " :  Ultima aproximacion de pi\n"<<endl;
+  cout << dardos_dentro<< " :  Dardos dentro\n"<<endl;
+  cout << dardos_fuera<< " :  Dardos fuera\n"<<endl;
  grafico(formula, iteracion_t);
 
 }
@@ -163,4 +166,6 @@ int main()
     }
 return 0;
 }
+
+
 
